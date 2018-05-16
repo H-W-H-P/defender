@@ -1,0 +1,5114 @@
+*,
+pre,
+figure,
+dl,
+dd,
+dt,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+form,
+html,
+body {
+    margin: 0;
+    padding: 0
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+    -ms-interpolation-mode: bicubic
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style-type: none
+}
+
+:focus {
+    outline: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ins {
+    text-decoration: none
+}
+
+input,
+textarea,
+select {
+    margin: 0
+}
+
+/*a {
+    cursor: pointer
+}*/
+
+h1 {
+    letter-spacing: .3px
+}
+
+.cfix:before,
+.cfix:after {
+    content: "";
+    display: table
+}
+
+.cfix:after {
+    clear: both
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    -webkit-padding-after: 0;
+    border: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    *overflow: visible
+}
+
+button[disabled],
+input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+a {
+    color: #222;
+    text-decoration: none
+}
+/*
+@font-face {
+    font-family: 'Ubuntu Mono';;
+    src: url('../fonts/UbuntuMono-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/UbuntuMono-Regular.woff') format('woff'), url('../fonts/UbuntuMono-Regular.ttf') format('truetype'), url('../fonts/UbuntuMono-Regular.svg#UbuntuMono-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: italic;;
+    src: url('../fonts/Ubuntu-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu-Italic.woff') format('woff'), url('../fonts/Ubuntu-Italic.ttf') format('truetype'), url('../fonts/Ubuntu-Italic.svg#Ubuntu-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Ubuntu Mono';
+    font-style: italic;
+    src: url('../fonts/UbuntuMono-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/UbuntuMono-Italic.woff') format('woff'), url('../fonts/UbuntuMono-Italic.ttf') format('truetype'), url('../fonts/UbuntuMono-Italic.svg#UbuntuMono-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: bold;;
+    src: url('../fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu-Bold.woff') format('woff'), url('../fonts/Ubuntu-Bold.ttf') format('truetype'), url('../fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal
+}*/
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    font-size: 13px
+}
+
+html {
+    background: url('../images/bg.png');
+    background-color: #ffcb2a;
+    font-family: 'Ubuntu Mono';
+}
+
+body {
+    position: relative;
+}
+
+.reviews__article {
+    font-family: 'Ubuntu';
+    font-style: italic;
+}
+
+.dermatological-agent_list {
+    font-family: 'Ubuntu';
+    font-style: bold;
+}
+
+.transparency {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .5;
+    z-index: 115;
+    display: none
+}
+
+.top {
+    padding: 25px 65px 40px;
+    /* width: 100%; */
+    /* position: relative; */
+    max-width: 1366px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.top .logo {
+    text-align: center;
+    width: 35%
+}
+
+.top .logo img {
+    width: 100%
+}
+
+.top .logo span {
+    font-size: 21px;
+    font-family: 'Ubuntu Mono';
+}
+
+.cream:before,
+.buy:after,
+.what.use:before,
+.buy.what:before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    z-index: 10;
+    top: -25px;
+    left: 6px;
+    width: 98%;
+    background-image: url(../images/container-top.png);
+    background-repeat: repeat-x;
+}
+
+.buy:after{
+	background-image: url(../images/container-bottom.png);
+	bottom: -25px;
+	top:auto;
+}
+
+.list-of-pages {
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px 0 0 20px;
+    text-align: center;
+  /*  width: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch*/
+}
+
+.list-of-pages__item {
+    display: inline-block;
+    /*width: 40%;*/
+/*    position: relative;
+    text-align: center;
+    width: 37%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg)
+    */
+}
+
+.list-of-pages__item a {
+/*    -webkit-box-sizing: border-box;
+    box-sizing: border-box;*/
+/*    -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);*/
+    position: relative;
+   
+}
+
+.list-of-pages__item span{
+	padding: 10px 40px 22px;
+    font-size: 21px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.list-of-pages__item svg{
+	position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: rotate(2deg)
+}
+
+/*.what .list-of-pages__item a {
+    padding: 0
+}*/
+
+/*.list-of-pages__item:first-child {
+    margin-left: 5%
+}
+
+.list-of-pages__item:last-child {
+    margin-left: -40px
+}*/
+
+.svg-button-link {
+    display: block
+}
+
+
+@keyframes hov {
+    0%,
+    100% {
+        transform: rotateX(0)
+    }
+    50% {
+        transform: rotateX(-30deg)
+    }
+}
+
+.top__nav {
+    position: absolute;
+    top: 70px;
+    right: 110px;
+    width: 40%;
+    overflow: hidden;
+}
+
+.top__nav .step-list {
+    list-style-type: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 10
+}
+
+.top__nav .bg-lines {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    margin-left: 20px;
+    z-index: 5;
+    height: 65%;
+}
+
+.top__nav .step-list__step {
+    float: left;
+    width: 33.333333%
+}
+
+.top__nav .step-list__step_second,
+.top__nav .step-list__step_fourth {
+    margin-top: 35px;
+}
+
+/*.top__nav .step-list__step figure {
+    overflow: hidden
+}*/
+
+.reviews .reviews__all-reviews {
+    font-size: 22px
+}
+
+.top__nav .step-list__step img {
+    float: left;
+    width: 32%
+}
+
+.top__nav .step-list__step_second img {
+    width: 39%
+}
+
+.top__nav .step-list__step figcaption {
+    width: 58%;
+    font-size: 15px;
+    float: left;
+    font-style: italic;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*font-family: 'UbuntuMono-Italic'*/
+}
+
+.top__nav .step-list__step_first figcaption {
+    margin-top: 3%
+}
+
+.top__nav .step-list__step_second figcaption {
+    margin-top: 30%;
+    padding-left: 2%
+}
+
+.top__nav .step-list__step_third figcaption {
+    margin-top: 3%;
+    line-height: 19px
+}
+
+.top__nav .step-list__step_fourth figcaption {
+    margin-top: 6%
+}
+
+.section {
+    text-align: center;
+    padding: 60px 65px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.page-template-main-page .section.reviews {
+    /*margin-top: -12px;*/
+    position: relative;
+    padding-top: 80px;
+}
+
+.caption {
+    font-size: 43px;
+    text-align: center;
+    position: relative;
+    font-family: 'Ubuntu';
+    font-style: bold;
+}
+
+.reviews:before {
+    content: '';
+    position: absolute;
+    display: none;
+    height: 25px;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: translate(0, -80%);
+    -ms-transform: translate(0, -80%);
+    transform: translate(0, -80%);
+    background-image: url('../images/bg-border-top.png');
+    background-repeat: repeat-x
+}
+
+.cream {
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.cream .cream__caption:after {
+    content: '';
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background-image: url('../images/curves-green.png');
+    background-repeat: no-repeat;
+    width: 105px;
+    height: 25px
+}
+
+.cream .manual {
+    overflow: hidden;
+    padding: 0 60px;
+}
+
+.cream .manual__item {
+    display: inline-block;
+    width: 33.3%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.cream .manual__item figure {
+    position: relative;
+    /*min-height: 215px;*/
+    padding: 0 0 50px;
+}
+
+/*.cream_caption {
+    width: 56%;
+    margin: 0 auto
+}*/
+
+.cream .manual__item figcaption {
+    font-style: italic;
+    font-size: 23px;
+    padding: 40px 10px 0;
+    line-height: 27px;
+    /* text-align: center; */
+    width: 100%;
+    /* display: inline-block; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    top: 60%;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.stories {
+    background: url(../images/blue-bg.png);
+    background-size: auto 100%;
+    margin: -40px 0;
+    padding: 100px 65px;
+    max-width:100%;
+    z-index: 2;
+    position: relative;
+}
+
+.stories__caption {
+    position: relative;
+    padding: 0 0 20px;
+}
+
+.stories .stories__caption:after {
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-image: url('../images/title-lines-black.svg');
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 25px;
+}
+
+.stories .stories__paragraph {
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 28px;
+    font-style: italic;
+    padding: 5% 0;
+}
+
+.stories .stories__iframe {
+    width: 43%;
+    height: 320px;
+    margin: 0 1.5%
+}
+
+.stories .stories__iframe-list-item{
+	display: inline;
+}
+
+.stories__article{
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+.reviews .reviews__wrapper {
+    position: relative;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 40px 0 190px;
+    margin: 0 auto;
+    background-size: 100% auto;
+    background-image: url(../images/bubble.svg);
+    background-repeat: no-repeat;
+    margin-top: 26px;
+}
+
+.reviews .reviews__caption {
+    position: relative;
+    font-size: 44px;
+    margin: 30px 0 60px 60px;
+    padding-bottom: 10px;
+    font-family: 'Ubuntu';
+    font-style: bold;;
+}
+
+.list-of-places__item_first img {
+    margin-top: 7px
+}
+
+.list-of-places__item_second img {
+    margin-top: 27px
+}
+
+.reviews .reviews__caption:after {
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-image: url('../images/curves-green.png');
+    background-repeat: no-repeat;
+    width: 105px;
+    height: 25px
+}
+
+.reviews .list-of-reviews {
+    margin: 0 auto;
+    width: 620px;
+    position: relative;
+    font-style: italic
+}
+
+.owl-stage-outer,
+.owl-stage {
+    height: 100%;
+    overflow: hidden
+}
+
+.owl-stage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.owl-item {
+    height: 100%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.owl-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.owl-prev {
+    position: absolute;
+    left: -20%;
+    top: 50%;
+    width: 100px;
+    height: 75px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    overflow:hidden;
+    text-indent: 9999px;
+}
+
+.owl-prev:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../images/arrows-left.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer
+}
+
+.owl-prev:hover:after {
+    background-image: url('../images/arrows-left_hover.svg');
+}
+
+.owl-next {
+    position: absolute;
+    right: -20%;
+    top: 50%;
+    width: 100px;
+    height: 75px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    overflow:hidden;
+    text-indent: 9999px;
+}
+
+.owl-next:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-image: url('../images/arrows-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.owl-next:hover:after {
+    background-image: url('../images/arrows-right_hover.svg');
+}
+
+.reviews .reviews__paragraph {
+    padding-bottom: 20px;
+    line-height: 30px;
+    padding-top: 4px;
+    font-size: 22px
+}
+
+.section.buy {
+    /*padding: 0 0 90px*/
+    position: relative;
+}
+
+.reviews .reviews__reviewer {
+    font-size: 27px;
+}
+
+.reviews .reviews__all-reviews {
+    position: absolute;
+    left: 57%;
+    bottom: 8%;
+    font-size: 22px;
+    z-index: 20;
+    /*background-size: 100% 100%;
+    background-image: url(../images/about_button.svg);
+    background-repeat: no-repeat;
+    width: 216px;*/
+    line-height: 70px;
+    text-transform: lowercase;
+    font-family: 'Ubuntu Mono';
+}
+
+.reviews,
+.buy {
+    background-color: #fff
+}
+
+.buy .buy__caption:after {
+    content: '';
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: transform(-50%, 0);
+    transform: translate(-50%, 0);
+    background-image: url('../images/curves-green.png');
+    background-repeat: no-repeat;
+    width: 105px;
+    height: 25px
+}
+
+.buy .list-of-places {
+    margin-top: 100px;
+    overflow: hidden;
+    text-align: center
+}
+
+.buy .list-of-places__item {
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle
+}
+
+.buy .list-of-places__item a {
+    width: 75%;
+    margin: 0 auto
+}
+
+.buy .list-of-places__item img {
+    max-width: 100%
+}
+
+.section.dermatological-agent {
+    padding-bottom: 0;
+}
+
+.dermatological-agent {
+    overflow: hidden;
+}
+
+.dermatological-agent .dermatological-agent__image {
+    padding: 100px 0 0 40px;
+    float: left;
+    width: 56%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.dermatological-agent .dermatological-agent__image img {
+    width: 100%
+}
+
+.dermatological-agent_about {
+    width: 40%;
+    float: left;
+    text-align: left;
+    margin-left: 4%
+}
+
+.dermatological-agent_list ul {
+    /*list-style-type: disc;
+    list-style-position: inside;*/
+    font-size: 30px;
+    line-height: 42px
+}
+
+.dermatological-agent_registr {
+    position: relative;
+    margin-bottom: 60px;
+    font-family: 'Ubuntu Mono';
+    font-style: italic;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 50px;
+    margin-top: 16px
+}
+
+.section.dermatological-agent .dermatological-agent_list {
+    padding-left: 50px
+}
+
+.dermatological-agent_registr:after {
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-image: url(../images/title-lines-black.svg);
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 25px
+}
+
+.dermatological-agent_list h6 {
+    font-size: 42px;
+    padding-bottom: 14px
+}
+
+.disclaimer__img{
+    width:100%;
+}
+.footer .disclaimer{
+    padding: 0 65px;
+    box-sizing: border-box;
+}
+
+.disclaimer p {
+    text-align: center;
+    /* width: 59%; */
+    margin: 0 auto;
+    font-family: 'Ubuntu Mono';
+    font-style: italic;
+    font-size: 16px;
+    line-height: 18px;
+    /* box-sizing: border-box; */
+    padding: 0 180px 10px;
+    color: #808080;
+}
+
+.cream .dermatological-agent_registr {
+    text-align: left;
+    color: #808080;
+    /*margin-left: 110px;*/
+    margin-top: 15px;
+/*    font-size: 16px;
+    line-height: 18px*/
+}
+
+.dicl_bot {
+    width: 100%;
+    height: 125px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 60px;
+    background-position: center;
+    background-image: url(../images/disclaimer_white.svg);
+}
+
+.dermatological-agent .dermatological-agent__caption {
+    position: relative;
+    font-size: 3.4em;
+    margin-bottom: 10%;
+    text-align: left
+}
+
+.dermatological-agent .dermatological-agent__article {
+    float: right;
+    width: 50%;
+    text-align: left;
+    padding: 0 2%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.dermatological-agent .dermatological-agent__caption:after {
+    content: '';
+    position: absolute;
+    top: 130%;
+    left: 0;
+    background-image: url('../images/title-lines-black.svg');
+    background-repeat: no-repeat;
+    width: 105px;
+    height: 25px
+}
+
+.what .list-of-pages__item:last-child {
+    display: none
+}
+
+.dermatological-agent .dermatological-agent__paragraph {
+    font-size: 1.6em;
+    line-height: 1.4;
+    font-style: italic
+}
+
+.dermatological-agent .dermatological-agent__paragraph_first {
+    padding-top: 4%
+}
+
+.dermatological-agent .dermatological-agent__link {
+    border-bottom: 1px solid #816825;
+    display: inline-block;
+    font-style: italic;
+    font-size: 1.6em;
+    color: #000;
+    padding-top: 4%
+}
+
+footer {
+    background-color: #fff;
+    margin: 260px 0 0;
+}
+
+.footer {
+    padding: 50px 65px 20px;
+    position: relative;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+.footer .disclaimer {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/*.disclaimer .disclaimer__img {
+    width: 90%;
+}*/
+
+.disclaimer .disclaimer__img_min {
+    display: none
+}
+
+.footer .copyright {
+    font-size: 20px
+}
+
+.footer .share {
+    float: right;
+    width: 36%
+}
+
+.footer .share__term {
+    float: left;
+    width: 30%;
+    font-size: 20px
+}
+
+.footer .share__definition {
+    float: left;
+    /* display: inline-block; */
+    text-align: right;
+    padding: 0 15px;
+    width: 10%;
+    transform: translateY(-30%);
+}
+
+.footer .share__definition img {
+    min-width: 100%;
+    width: 100%;
+    max-height: 40px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: 70%
+}
+
+.section.book {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    z-index: 15;
+    padding: 0;
+    margin-top: 7%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 620px
+}
+
+/*.sample {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10
+}*/
+
+.border {
+    position: absolute
+}
+
+.border_left {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 19px;
+    background-image: url(../images/bg-border-left-orange.png)
+}
+
+.border_right {
+    right: -0;
+    top: 0;
+    bottom: 0;
+    width: 19px;
+    background-image: url(../images/bg-border-right-orange.png)
+}
+
+.border_bottom {
+    right: 0;
+    bottom: -12px;
+    left: 0;
+    height: 26px;
+    background-image: url(../images/bg-border-bottom-orange.png)
+}
+
+.alphabet {
+    position: absolute;
+    top: 8%;
+    right: -30px;
+    bottom: 8%
+}
+
+.alphabet-list {
+    height: 100%
+}
+
+.alphabet-list__item {
+    position: relative;
+    font-size: 1.4em;
+    height: 8%;
+    width: 80px;
+    margin-top: -2px;
+    border-radius: 0 10px 10px 0;
+    -webkit-box-shadow: 1px 2px 7px #a0a0a0;
+    box-shadow: 1px 2px 7px #a0a0a0;
+    background-color: #fff;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.alphabet-list__item:hover {
+    -webkit-transform: translate(20%, 0);
+    -ms-transform: translate(20%, 0);
+    transform: translate(20%, 0)
+}
+
+.alphabet-list__item a {
+    text-align: right;
+    padding: 15%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%
+}
+
+.wrong_number{
+    -webkit-animation: wr_num 1s ease;
+    -o-animation: wr_num 1s ease;
+    animation: wr_num 1s ease;
+}
+
+@keyframes wr_num {
+    0%,100% { -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1); }
+    50% { -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); }
+}
+
+.pop-up {
+    background-image: url('../images/plashka2.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    font-style: italic;
+    /*height: 280px;*/
+    max-width: 530px;
+    width: 70%;
+    position: fixed;
+    z-index: 130;
+    padding: 40px 20px 60px;
+    top: 50%;
+    left: -100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.pop-up .form {
+    height: 40%;
+    width: 100%;
+    padding: 3% 5%;
+    position: relative;
+    z-index: 20;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.cream .disclaimer {
+    margin: 40px 0 0
+}
+
+.pop-up .form .form__button {
+    padding-bottom: 4%;
+    float: right;
+    max-width: 40%;
+    margin: 0;
+    height: 100%;
+    background-color: inherit;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url(../images/button3.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 1.4em;
+    border: 0;
+    outline: 0;
+    margin-top: -2%;
+}
+
+.popup_input__wrap {
+    width: 60%;
+    /*height: 60%;*/
+    background-image: url(../images/plashka.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat
+}
+
+.pop-up .form .form__input_text {
+    width: 100%;
+    height: 100%;
+    /*float: left;*/
+    border-radius: 10px;
+    border: 2px solid #000;
+    background-color: inherit;
+    border: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+::-webkit-input-placeholder {
+    color: #000
+}
+
+::-moz-placeholder {
+    color: #000
+}
+
+:-moz-placeholder {
+    color: #000
+}
+
+:-ms-input-placeholder {
+    color: #000
+}
+
+.pop-up .form .form__input_checkbox {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    float: left;
+    opacity: 0;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 10;
+    -webkit-transform: translate(0, 20%);
+    -ms-transform: translate(0, 20%);
+    transform: translate(0, 20%)
+}
+
+/*.pop-up .form .form__input_label {
+    border-bottom: 1px solid #000;
+    font-size: 1.2em;
+    cursor: pointer
+}*/
+
+.pop-up .form .wrapper-check {
+    position: relative;
+    display: inline-block;
+    /*width: 60%;*/
+    /*height: 40%;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 30px;
+    margin-left: 5px;
+    /*border-bottom: 1px solid #000;*/
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+.pop-up .form .wrapper-check input{
+	display: none;
+}
+
+.pop-up .form .wrapper-check:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 55%;
+    width: 15px;
+    height: 15px;
+    -webkit-transform: translate(-10%, -50%);
+    -ms-transform: translate(-10%, -50%);
+    transform: translate(-10%, -50%);
+    background-image: url(../images/checkbox.svg);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.pop-up .form .wrapper-check:after {
+    opacity: 0;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    width: 17px;
+    height: 25px;
+    background-image: url('../images/tick.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transform: translate(-10%, -70%);
+    -ms-transform: translate(-10%, -70%);
+    transform: translate(-10%, -70%)
+}
+
+.pop-up .form .wrapper-check.opacity:after {
+    opacity: 1
+}
+
+.pop-up .pop-up__caption {
+    font-size: 21px;
+    padding: 10px 30px 10px;
+}
+
+.pop-up .pop-up__paragraph {
+    font-size: 1.3em;
+    padding: 2% 14% 1%;
+    opacity: 0
+}
+
+.pop-up .pop-up__cross {
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    top: -4%;
+    width: 12%;
+    right: -2%
+}
+
+.pop-up .pop-up__cross img {
+    width: 100%
+}
+
+.pop-up .pop-up-list {
+    overflow: hidden;
+    width: 65%;
+    display: inline-block;
+    margin-top: 5%;
+    position: relative;
+    z-index: 20
+}
+
+.pop-up .pop-up-list__item {
+    float: left;
+    width: 25%
+}
+
+.pop-up .pop-up-list__item a {
+    /*width: 	50px;*/
+    display: block
+}
+
+.pop-up .pop-up__link-back {
+    width: 40%;
+    height: 30%;
+    background-color: #fff;
+    position: relative;
+    margin: 8% auto;
+    padding-top: 5%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url(../images/bg-border.png);
+    font-style: normal;
+    background-repeat: repeat;
+    background-size: contain;
+    border-radius: 25%;
+    font-size: 1.2em;
+    z-index: 20
+}
+
+.pop-up .pop-up__link-back:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/left-border.png')
+}
+
+.pop-up .pop-up__link-back:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -2px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url('../images/right-border.png')
+}
+
+.overflow {
+    overflow: hidden
+}
+
+.display {
+    display: block
+}
+
+.pop-up-participation.leftMore,
+.pop-up-social.leftMore,
+.pop-up-congratulation.leftMore {
+    -webkit-animation: leftMore .5s linear 0s 1;
+    animation: leftMore .5s linear 0s 1
+}
+
+@-webkit-keyframes leftMore {
+    0% {
+        left: -100%
+    }
+    100% {
+        left: 50%
+    }
+}
+
+@keyframes leftMore {
+    0% {
+        left: -100%
+    }
+    100% {
+        left: 50%
+    }
+}
+
+.left-more {
+    left: 50%
+}
+
+.pop-up-participation.leftLess,
+.pop-up-social.leftLess,
+.pop-up-congratulation.leftLess {
+    -webkit-animation: leftLess .5s linear 0s 1;
+    animation: leftLess .5s linear 0s 1
+}
+
+@-webkit-keyframes leftLess {
+    0% {
+        left: 50%
+    }
+    100% {
+        left: 150%
+    }
+}
+
+@keyframes leftLess {
+    0% {
+        left: 50%
+    }
+    100% {
+        left: 150%
+    }
+}
+
+.left-less {
+    left: -100%
+}
+
+.top.what {
+    height: auto;
+    position: relative;
+    padding: 2% 3%
+}
+
+.top__header.what {
+    overflow: hidden
+}
+
+.top__header.what .logo {
+    float: left
+}
+
+.top__header.what .list-of-pages {
+    float: right
+}
+
+.dermatological-agent.what {
+    padding: 5% 0;
+    background: 0
+}
+
+.dermatological-agent.what .dermatological-agent__image {
+    padding: 0 2% 0 0
+}
+
+.dermatological-agent.what .dermatological-agent__paragraph_first {
+    padding-top: 0
+}
+
+.dermatological-agent.what .dermatological-agent__paragraph_last {
+    padding-top: 7%
+}
+
+.use {
+    padding: 2% 3%;
+    position: relative;
+    text-align: right
+}
+
+.use.what .use__caption {
+    text-align: left
+}
+
+.use .use__caption:after {
+    content: '';
+    position: absolute;
+    top: 130%;
+    left: 0;
+    background-image: url('../images/title-lines-black.svg');
+    background-repeat: no-repeat;
+    width: 105px;
+    height: 25px
+}
+
+.use .use__article {
+    overflow: hidden;
+    font-size: 1.6em;
+    line-height: 1.3;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 5%
+}
+
+.use .use__paragraph_left {
+    float: left;
+    width: 50%;
+    padding-right: 2%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.use .use__paragraph_right {
+    float: right;
+    width: 50%;
+    padding: 0 2%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.use .use__more {
+    position: relative;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    margin-top: 2%;
+    font-family: 'Ubuntu Mono';;
+    text-align: center
+}
+
+.use__more_capt {
+    padding: 30px;
+    display: inline-block
+}
+
+.reviews.what {
+    padding: 2% 3%;
+    background-color: inherit
+}
+
+.reviews.what:before {
+    -webkit-transform: translate(0, -20%);
+    -ms-transform: translate(0, -20%);
+    transform: translate(0, -20%);
+    background-image: url('../images/bg-border-bottom.png')
+}
+
+.reviews.what:after {
+    content: '';
+    position: absolute;
+    height: 38px;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: translate(0, 20%);
+    -ms-transform: translate(0, 20%);
+    transform: translate(0, 20%);
+    background-image: url('../images/container-top.png');
+    background-repeat: repeat-x
+}
+
+.page-template-about-page .reviews.what:after {
+	display:none;
+}
+
+.reviews.what .reviews__caption {
+    text-align: left
+}
+
+.reviews.what .reviews__caption:after {
+    left: 0;
+    background-image: url('../images/title-lines-black.svg');
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+}
+
+.p {
+    z-index: 40
+}
+
+.reviews.what .list-of-reviews {
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: auto
+}
+
+.reviews.what .list-of-reviews__item {
+    float: left;
+    width: 50%;
+    padding: 0 4%;
+    margin-bottom: 4%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.reviews__link{
+    margin-left: 50px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.dermatological-agent_list li:before{
+    content: '\2022';
+    width: 20px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+}
+
+.dermatological-agent_list li{
+    padding-left: 20px;
+    position: relative;
+}
+
+.reviews.what .reviews__article {
+    background-image: url(../images/bubble.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    padding: 9% 12% 13%;
+    line-height: 1.2;
+    margin: 0 auto;
+    min-height: 340px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.reviews.what .reviews__paragraph {
+    font-size: 1.4em
+}
+
+.reviews.what .reviews__reviewer {
+    font-size: 1.6em
+}
+
+.buy.what {
+    /*padding: 2% 5% 8% 5%*/
+}
+
+.buy.what:after {
+    display: none
+}
+
+.what .dermatological-agent__article {
+    font-family: 'Ubuntu Mono';
+    font-style: italic;
+    padding-top: 40px
+}
+
+.what .dermatological-agent .dermatological-agent__image {
+    width: 50%
+}
+
+.what .dermatological-agent .dermatological-agent__caption {
+    font-size: 40px;
+    padding-bottom: 20px
+}
+
+.what .dermatological-agent h5 {
+    padding-bottom: 30px;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-style: bold;
+}
+
+.what .dermatological-agent_registr {
+    text-align: left;
+    padding-left: 15%
+}
+
+.what .dermatological-agent_registr:after {
+    display: none
+}
+
+.what .dermatological-agent__article article {
+    font-size: 18px;
+    line-height: 24px
+}
+
+.what.use {
+    background-color: #fff
+}
+
+.what .use__article>div {
+    float: left;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.what .use__article_text {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Ubuntu Mono';
+    font-style: italic;
+    padding-bottom: 10px;
+    padding-top: 10px
+}
+
+.what .use__article_capt {
+    font-family: 'Ubuntu';
+    font-style: bold;;
+    padding-bottom: 10px;
+    padding-top: 10px
+}
+
+.what .disclaimer .disclaimer__img {
+    width: 100%;
+}
+
+.what .mob {
+    display: none
+}
+
+.non_displayed {
+    display: none
+}
+
+.capt_image {
+    display: none
+}
+
+.book {
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    height: 700px
+}
+
+/*.sample {
+    overflow: visible
+}*/
+
+.wrap {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 1%;
+    left: 3.8%;
+    right: 3.3%;
+    bottom: 8%;
+    width: auto;
+    height: auto;
+    margin: 0
+}
+
+.content {
+    height: 100%;
+    float: left;
+    position: relative;
+    width: 100%;
+    text-align: left
+}
+
+.content img {
+    display: none
+}
+
+.fliped .content img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1)
+}
+
+.fliped .content h2,
+.fliped .content p {
+    display: none
+}
+
+.alphabet {
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    top: 5%;
+    right: -50px
+}
+
+.alphabet a {
+    width: 100%;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    float: left;
+    text-align: right;
+    padding: 10px 15px
+}
+
+.book {
+    background-image: url(../images/bg_book.png);
+    padding-bottom: 20px;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.p {
+    position: absolute;
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transition: 1s linear;
+    -o-transition: 1s linear;
+    transition: 1s linear;
+    width: 50%;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 30% 36px 36px 36px/ 60px 36px 36px 36px
+}
+
+.section.book {
+    margin-top: 27px
+}
+
+.p.flip {
+    -webkit-transform: rotateY(-175deg);
+    transform: rotateY(-175deg);
+    -webkit-transition: 1s linear;
+    -o-transition: 1s linear;
+    transition: 1s linear
+}
+
+.p6.flip {
+    -webkit-transform: rotateY(-174deg);
+    transform: rotateY(-174deg);
+    -webkit-transition: 1s linear;
+    -o-transition: 1s linear;
+    transition: 1s linear
+}
+
+.p:not(.flip) {
+    -webkit-transform: rotateY(-1deg);
+    transform: rotateY(-1deg)
+}
+
+.p6:not(.flip) {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg)
+}
+
+.p.fliped {
+    -webkit-transform: rotateY(-175deg);
+    transform: rotateY(-175deg)
+}
+
+.p1.fliped {
+    -webkit-transform: rotateY(-176deg);
+    transform: rotateY(-176deg)
+}
+
+.p {
+    -webkit-transition: 1s linear;
+    -o-transition: 1s linear;
+    transition: 1s linear;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+
+.book_contr {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0
+}
+
+.book_contr_ar {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent;
+    float: left;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    right: 45px;
+    bottom: 25px;
+    z-index: 105;
+}
+
+.book_contr_ar a {
+    width: 100%;
+    height: 100%
+}
+
+.fliped .book_next {
+    display: none
+}
+
+.green-button {
+    background-image: url(../images/big_button.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 20px;
+    line-height: 23px;
+    margin-left: 100px;
+    text-align: left;
+    margin-top: 20px
+}
+
+.green-button span {
+    padding: 26px 30px;
+    display: inline-block
+}
+
+.rules {
+	display: inline-block;
+    text-align: left;
+    padding-left: 130px;
+    padding-top: 30px;
+    text-decoration: underline;
+    font-family: 'Ubuntu';
+    font-style: italic;
+}
+
+h1,
+p,
+h2 {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden
+}
+
+.content h2 {
+    font-size: 40px;
+    font-family: 'Ubuntu';
+    font-style: bold;;
+    margin-top: 50px;
+    padding-bottom: 52px;
+    position: relative;
+    text-align: left;
+    padding-left: 100px
+}
+
+.content p {
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-style: italic;;
+    margin-left: 100px;
+    padding-right: 40px;
+    text-align: left;
+    line-height: 24px
+}
+
+.content .r_a_b {
+    display: block
+}
+
+.fliped .content .l_a_b {
+    width: auto;
+    height: auto;
+    z-index: 0
+}
+
+.content h2:after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/after.svg);
+    width: 100px;
+    height: 15px;
+    left: 100px;
+    bottom: 20px;
+    background-repeat: no-repeat;
+}
+
+.cream_caption {
+    position: relative;
+    margin-top: 18px;
+    line-height: 50px;
+    display: inline-block;
+    padding: 15px 130px 40px;
+}
+
+.cream_caption:after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/after.svg);
+    width: 100px;
+    height: 16px;
+    left: 50%;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+    bottom: -4px;
+}
+
+.mobile {
+    display: none
+}
+
+.manual__item_fourth .anim_wr .blood_4 {
+    left: 40%;
+    top: 25%;
+}
+
+.def_6 {
+    left: 48px;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease
+}
+
+.an .def_6 {
+    -webkit-animation: bl_ap 3s ease;
+    animation: bl_ap 3s ease
+}
+
+.book {
+    background-size: 100% 100%
+}
+
+
+
+.hand_1 {
+    left: 18%;
+    position: absolute;
+    top: 12%
+}
+
+.mobile_pict {
+    overflow: hidden;
+    position: relative
+}
+
+.mobile_pict:before,
+.mobile_pict:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 22px;
+    z-index: 100;
+    background-image: url(../images/bg-border-bottom-orange2.png);
+    background-repeat: repeat-x
+}
+
+.mobile_pict:before {
+    top: -3px;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg)
+}
+
+.mobile_pict:after {
+    bottom: -3px
+}
+
+.what.top .logo {
+    width: 33%;
+    margin-left: 3%
+}
+
+.dermatological-agent.what {
+    padding: 0
+}
+
+.dermatological-agent .dermatological-agent__article {
+    padding-left: 4%;
+    padding-top: 0
+}
+
+.what .dermatological-agent .dermatological-agent__caption {
+    margin: 18px 0 0;
+    font-family: 'Ubuntu';
+    font-style: bold;;
+    font-size: 40px
+}
+
+.dermatological-agent .dermatological-agent__caption:after {
+    top: 96%
+}
+
+.what .dermatological-agent h5 {
+    padding-top: 44px;
+    padding-bottom: 28px
+}
+
+.what .dermatological-agent_registr {
+    text-align: left;
+    padding-left: 8%;
+    font-size: 14px;
+    line-height: 16px
+}
+
+.top.what {
+    padding-bottom: 64px
+}
+
+.what .list-of-pages {
+    margin-right: 4%
+}
+
+.what .list-of-pages__item {
+    width: 100%
+}
+
+.use {
+    padding: 3% 6%
+}
+
+.what .use__article_text {
+    padding-right: 10%
+}
+
+.what .use__article>div:nth-child(2) {
+    /*padding-left: 5%;*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.use .use__article {
+    margin-bottom: 40px
+}
+
+.what .use .use__article {
+    margin-bottom: 10%
+}
+
+/*.disclaimer p {
+    margin-top: 12px;
+    color: #808080;
+    width: 74%
+}*/
+
+.reviews.what {
+    /*padding: 1% 5.5% 1% 6.5%*/
+}
+
+.reviews.what .list-of-reviews__item {
+/*    padding: 0;
+    padding-right: 4%;
+    padding-top: 2%*/
+}
+
+.reviews.what .list-of-reviews__item:nth-child(2n) {
+/*    padding-left: 4%;
+    padding-right: 0*/
+}
+
+.reviews.what .reviews__article {
+    /*height: 360px*/
+    /*min-height: auto;*/
+}
+
+.reviews.what .reviews__article,
+.reviews.what .reviews__paragraph {
+    font-family: 'Ubuntu';
+    font-style: italic;;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left
+}
+
+.reviews.what .list-of-reviews__item.list-of-reviews__item_fourth article {
+    padding: 4% 12%
+}
+
+/*.buy .list-of-places {
+    margin-top: 8%
+}*/
+
+.buy.what {
+    /*padding: 2% 5% 5% 5%*/
+}
+
+.footer .disclaimer p {
+    color: #000
+}
+
+.anim_wr {
+/*    position: relative;
+    height: 250px;
+    width: 300px*/
+    position: relative;
+    min-height: 240px;
+}
+
+img.hand_1 {
+    width: 160px;
+}
+
+img.blood_1 {
+    width: 34px;
+}
+
+#demo {
+    position: absolute;
+    left: 28%;
+    top: 8%;
+    width: 45%;
+    bottom: 0;
+    overflow: visible
+}
+
+.blood_1,
+.fall_1 {
+    position: absolute
+}
+
+.fall_1 {
+    width: 22%;
+    height: 30%;
+    bottom: 0;
+    left: 36%;
+    opacity: 0
+}
+
+.an .fall_1 {
+    -webkit-animation: fall_ap 4s linear 2s;
+    animation: fall_ap 4s linear 2s
+}
+
+@-webkit-keyframes fall_ap {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: translateY(-40px);
+        -ms-transform: translateY(-40px);
+        transform: translateY(-40px)
+    }
+    100% {
+        -webkit-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        transform: translateY(100px)
+    }
+}
+
+@keyframes fall_ap {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: translateY(-40px);
+        -ms-transform: translateY(-40px);
+        transform: translateY(-40px)
+    }
+    100% {
+        -webkit-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        transform: translateY(100px)
+    }
+}
+
+.manual img {
+    min-width: 0;
+    max-width: 210px
+}
+
+.blood_1 {
+    width: 20%;
+    height: 20%;
+    top: 35%;
+    left: 42%;
+}
+
+.an .blood_1 {
+    -webkit-animation: bl_ap 2s linear;
+    animation: bl_ap 2s linear
+}
+
+@-webkit-keyframes bl_ap {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        transform: scale(0, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+}
+
+@keyframes bl_ap {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        transform: scale(0, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+}
+
+.an .manual__item_first figcaption {
+    -webkit-animation: ap 6s linear;
+    animation: ap 6s linear
+}
+
+.manual__item_first .what_to_do {
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease
+}
+
+.an .manual__item_first .what_to_do {
+    -webkit-animation: ap2 8s linear;
+    animation: ap2 8s linear
+}
+
+@-webkit-keyframes ap {
+    0%,
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes ap {
+    0%,
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes ap2 {
+    0%,
+    80% {
+        opacity: 0
+    }
+    90% {
+        opacity: 1
+    }
+    95% {
+        color: red
+    }
+}
+
+@keyframes ap2 {
+    0%,
+    80% {
+        opacity: 0
+    }
+    90% {
+        opacity: 1
+    }
+    95% {
+        color: red
+    }
+}
+
+.blood_4,
+.stick_4 {
+    position: absolute
+}
+
+.blood_4 {
+    width: 22%;
+    /* height: 41%; */
+    top: 22%;
+    left: 41%;
+}
+
+.stick_4 {
+    width: 50%;
+    height: 50%;
+    top: 64%;
+    left: 16%;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.manual__item_fourth figure {
+    width: 100%
+}
+
+.bl_b_5,
+.p_b_5,
+.gr_b_5 {
+    position: absolute;
+    width: 28%;
+    top: 30%
+}
+
+.an .bl_b_5,
+.an .p_b_5,
+.an .gr_b_5 {
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite
+}
+
+.bl_b_5 {
+    width: 20%;
+    top: 25%;
+    left: 20%;
+}
+
+.p_b_5 {
+    width: 10%;
+    top: 10%;
+    left: 40%
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.def_6 {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 45%;
+    /* height: 88%; */
+}
+
+.blood_3 {
+    top: 20%
+}
+
+.body_noscroll {
+    overflow: hidden;
+    height: 100%;
+    width: 100%
+}
+
+.section-preload {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    background-color: #ffcb2a;
+    background-image: url(../images/bg.png)
+}
+
+.section--first {
+    z-index: 600
+}
+
+.wrap-i {
+    margin: 0 auto;
+    max-width: 1300px;
+    position: relative
+}
+
+.preload-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    right: 0;
+    transform: translate(-50%, -50%)
+}
+
+#defender {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto
+}
+
+.pt-page-bounceIn {
+    animation: bounceIn 1.6s ease both
+}
+
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+    }
+    0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3)
+    }
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1)
+    }
+    40% {
+        transform: scale3d(.9, .9, .9)
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03)
+    }
+    80% {
+        transform: scale3d(.97, .97, .97)
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.gr_btn_svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    max-width: 354px;
+    z-index: -1
+}
+
+.green-button {
+    position: relative;
+    background-image: none;
+    display: inline-block
+}
+
+.bg_button_svg {
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    left: 7%
+}
+
+.what .use__article_capt.opened + .use__article_content > *{
+    padding: 10px 0;
+}
+.use__article{
+    font-family: 'Ubuntu Mono';
+    font-style: italic;
+}
+.what .use__article>div:first-child{
+    padding-right: 50px;
+}
+.what .use__article>div:last-child{
+    padding-left: 50px;
+}
+
+.pop-up .form .form__button {
+    background-image: none;
+    padding: 4% 20px 6%
+}
+
+.pop-up .form .form__button svg {
+    top: 0;
+    left:0;
+    width:100%;
+}
+
+.reviews .reviews__all-reviews {
+    background-image: none
+}
+
+.reviews__all-reviews span {
+    padding: 5px 47px 15px;
+    display: inline-block;
+}
+
+.gr_bn_svg {
+    position: absolute;
+    z-index: -1;
+    /*width: 80%;*/
+    /*left: 10%*/
+}
+
+.bg_gr_im {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0
+}
+
+.soc_hover {
+    display: none
+}
+
+a:hover .soc_nohover {
+    display: none
+}
+
+a:hover .soc_hover {
+    display: block
+}
+
+.cr_hov {
+    display: none
+}
+
+.pop-up__cross:hover .cr_hov {
+    display: block
+}
+
+.pop-up__cross:hover .cr_unhov {
+    display: none
+}
+
+.hov {
+    display: none
+}
+
+.content .hov {
+    display: none
+}
+
+.fliped .content .hov {
+    display: none
+}
+
+.book-arrow-left:hover .hov {
+    display: block
+}
+
+.book-arrow-left:hover .unhov{
+/*.book-arrow-left:active .hov {*/
+    display: none
+}
+
+.book-arrow-right:hover .hov {
+    display: block
+}
+
+.book-arrow-right:hover .unhov{
+/*.book-arrow-right:active .hov {*/
+    display: none
+}
+
+.use .use__more {
+    background-image: none;
+    z-index: 10
+}
+
+.step-list a {
+    cursor: default
+}
+
+.arrow_down {
+    width: 65px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+    z-index: 10;
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite
+}
+.section.book .arrow_down{
+    display: none;
+}
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translate(-50%, 0)
+    }
+    40% {
+        transform: translate(-50%, -30px)
+    }
+    60% {
+        transform: translate(-50%, -15px)
+    }
+}
+
+/*.list-of-pages__item:first-child:hover .bg_button_svg .base,*/
+.list-of-pages__item a:hover .bg_button_svg .base,
+.list-of-pages__item:last-child:hover .bg_button_svg .base,
+.green-button:hover .base,
+.form__button:hover .bg_button_svg .base,
+.use .use__more:hover .base,
+.reviews__all-reviews:hover .base {
+    opacity: 0
+}
+
+
+.what .list-of-pages__item a {
+    float: right
+}
+
+.what .list-of-pages__item a svg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: rotate(2deg)
+}
+
+.what .list-of-pages__item a span {
+    padding: 8px 40px 12px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px
+}
+
+.drop_red {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 30%;
+    height: 100%
+}
+
+.an .dr_r_2 {
+    -webkit-animation: ape 2s linear;
+    -o-animation: ape 2s linear;
+    animation: ape 2s linear
+}
+
+.an .dr_r_3 {
+    -webkit-animation: aper 1s linear;
+    -o-animation: aper 1s linear;
+    animation: aper 1s linear
+}
+
+@keyframes ape {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes aper {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pop-up-list__item img {
+    height: 50px;
+    min-width: 100%;
+    width: 100%;
+    max-height: 40px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media screen and (max-width:700px) {
+    #demo {
+        width: 86%;
+        left: 5%
+    }
+    .manual__item_fourth .anim_wr .blood_4 {
+        left: 20px
+    }
+    .cream .manual__item img {
+        height: auto
+    }
+    .cream .manual__item {
+        height: auto;
+        width: 45%
+    }
+    .anim_wr {
+        position: relative;
+        height: 160px;
+        width: 120px
+    }
+    .cream .dermatological-agent_registr {
+        padding-left: 0
+    }
+    .def_6 {
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        width: 70%;
+        height: 88%
+    }
+}*/
+
+/*@media screen and (max-width:700px) {
+    .what.top .logo {
+        width: 100%;
+        margin-left: 0
+    }
+    .top__header.what .list-of-pages {
+        margin-right: 26%
+    }
+    .what .list-of-pages {
+        width: 48%
+    }
+    .dermatological-agent.what {
+        margin: 0
+    }
+    .what .dermatological-agent .dermatological-agent__caption {
+        font-size: 26px;
+        margin-top: 6px;
+        line-height: 30px;
+        padding-bottom: 30px
+    }
+    .dermatological-agent .dermatological-agent__article {
+        padding: 0 7%
+    }
+    .what .dermatological-agent_registr {
+        margin-top: 0;
+        font-size: 12px;
+        line-height: 14px
+    }
+    .dermatological-agent .caption.dermatological-agent__caption:after {
+        top: 75%
+    }
+    .what .dermatological-agent h5 {
+        padding: 0 0 4px
+    }
+    .dermatological-agent.what {
+        padding-bottom: 16px
+    }
+    .use {
+        padding: 12% 7%
+    }
+    .use.what .use__caption,
+    .reviews .reviews__caption {
+        /*margin-bottom: 16%*/
+    /*}*/
+    /*.capt_image {*/
+/*        width: 26px;
+        height: 26px;
+        min-width: 0;*/
+        /*margin: 0 2% 0 6%*//*
+        left:-17px;
+    }*/
+    /*.what .use__article_capt {
+        padding-bottom: 18px
+    }
+    .what .use__article_text {
+        font-family: 'Ubuntu Mono';
+        font-style: italic;
+        font-size: 18px;
+        line-height: 24px;
+        padding-top: 16px;
+        padding-right: 0;
+        padding-bottom: 2px
+    }
+    .what .use__article_text:last-child {
+        padding-bottom: 40px
+    }
+    .what .use__article>div:nth-child(2) {
+        /*padding-left: 0*/
+    /*}
+    .last_use__article_capt {
+        margin-bottom: 27px
+    }
+    .use .use__more {
+        font-size: 14px;
+        width: 100%
+    }
+    .what .disclaimer .disclaimer__img_min {
+        width: 100%;
+        margin-left: 0
+    }
+    .what .disclaimer p {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 16px;
+        padding: 0;
+    }
+    .use {
+        padding: 12% 7% 2%
+    }
+    .reviews.what {
+        /*padding: 0*/
+    /*}*/
+    /*.reviews.what .reviews__caption {
+        width: 70%;
+        font-size: 27px;
+        padding-left: 8%;
+        line-height: 30px;
+        margin-bottom: 30px
+    }
+    .reviews.what .list-of-reviews__item:nth-child(2n),
+    .reviews.what .list-of-reviews__item {
+        /*padding: 8%*/
+    /*}*/
+    /*.reviews.what .reviews__reviewer {
+        font-size: 20px
+    }
+    .reviews.what .list-of-reviews__item.list-of-reviews__item_fourth article {
+        padding: 0
+    }
+    .reviews.what .reviews__article,
+    .reviews.what .list-of-reviews__item.list-of-reviews__item_fourth article {
+        height: auto;
+        padding-bottom: 42px;
+        padding-top: 26px
+    }
+    .buy.what {
+        /*padding: 10% 0 5% 8%*/
+    /*}
+}*/
+
+/*@media screen and (max-width:767px) {
+    html,
+    body {
+        font-size: 16px
+    }
+    .disclaimer .disclaimer__img {
+        display: none
+    }
+    .cream .disclaimer .disclaimer__img_min,
+    .what .disclaimer .disclaimer__img_min {
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+        min-width: 60%
+    }
+    .footer .disclaimer .disclaimer__img_min {
+        display: block;
+        width: 50%;
+        min-width: 50%;
+        margin-left: 25%
+    }
+    .dermatological-agent {
+        /*padding-bottom: 460px*/
+   /* }
+    .p.p3 h2:after,
+    .cream .cream__caption:after,
+    .stories .stories__caption:after,
+    .reviews .reviews__caption:after,
+    .buy .buy__caption:after,
+    .dermatological-agent .dermatological-agent__caption:after {
+        width: 150px;
+        height: 40px
+    }
+    .p.p3 .green-button {
+        max-width: 400px
+    }
+    .cream .manual__item {
+        height: 280px
+    }
+    .cream .manual__item img {
+        height: 170px
+    }
+    .stories .stories__paragraph {
+        padding: 18% 0 15%
+    }
+    .stories .stories__iframe {
+        height: 300px
+    }
+    .owl-prev,
+    .owl-next {
+        width: 100px;
+        height: 75px
+    }
+    .dermatological-agent .dermatological-agent__caption {
+        font-size: 2.8em
+    }
+    .footer .copyright {
+        font-size: 1.4em
+    }
+    .footer .share__term {
+        font-size: 1.4em
+    }
+    .pop-up {
+        height: 320px;
+        max-width: 500px
+    }
+    .pop-up .form .form__input_text {
+        padding: 15px;
+        border-radius: 15px
+    }
+    .pop-up .form .wrapper-check:before {
+        width: 15px;
+        height: 15px;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+    .pop-up .form .wrapper-check:after {
+        bottom: 4px;
+        left: 0;
+        width: 17px;
+        height: 25px;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+    .pop-up .form .form__input_checkbox {
+        width: 15px;
+        height: 15px;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+    .top.what:after,
+    .reviews.what:before,
+    .reviews.what:after {
+        height: 10px
+    }*/
+/*}*/
+
+/*@media screen and (orientation:landscape) and (max-width:767px) {
+    html,
+    body {
+        font-size: 20px
+    }
+    .list-of-pages__item a {
+        font-size: 1.4em
+    }
+    .cream .manual {
+        margin-top: 25%
+    }
+    .cream .manual__item {
+        height: 300px
+    }
+    .reviews .reviews__all-reviews {
+        bottom: 80px
+    }
+    .dermatological-agent .dermatological-agent__image {
+        top: 21%
+    }
+    .pop-up {
+        height: 320px;
+        max-width: 670px
+    }
+    .pop-up .pop-up__caption {
+        padding: 6% 15% 0
+    }
+    .dermatological-agent.what .dermatological-agent__caption:after,
+    .use .use__caption:after,
+    .reviews.what .reviews__caption:after,
+    .buy .buy__caption:after {
+        width: 200px;
+        height: 50px
+    }
+}*/
+/*
+
+@media screen and (max-width:1023px) {
+    html,
+    body {
+        font-size: 22px
+    }
+    .list-of-pages__item a {
+        font-size: 1.5em
+    }
+    .p.p3 p {
+        margin: 23% 0 10%;
+        font-size: 1.4em
+    }
+    .top__nav .step-list__step figcaption {
+        font-size: 1em
+    }
+    .dermatological-agent.what .dermatological-agent__caption:after,
+    .use .use__caption:after,
+    .reviews.what .reviews__caption:after,
+    .buy .buy__caption:after {
+        width: 100px
+    }
+    .section>.caption {
+        font-size: 2em
+    }
+    .cream .manual {
+        margin-top: 30%
+    }
+    .cream .manual__item {
+        height: 360px
+    }
+    .cream .manual__item figcaption {
+        padding: 0 7%
+    }
+    .stories .stories__iframe {
+        height: 400px
+    }
+    .reviews .reviews__caption {
+        font-size: 3em
+    }
+    .reviews .list-of-reviews {
+        padding: 5% 0 28%
+    }
+    .owl-prev,
+    .owl-next {
+        width: 140px;
+        height: 100px
+    }
+    .reviews .reviews__all-reviews {
+        font-size: 1.2em;
+        bottom: 80px
+    }
+    .buy .list-of-places {
+        /*margin-top: 20%*/
+ /*   }
+    .dermatological-agent .dermatological-agent__caption {
+        font-size: 3em
+    }
+    .dermatological-agent .dermatological-agent__image {
+        top: 22%
+    }
+    .pop-up {
+        width: 90%;
+        height: 430px;
+        max-width: 760px
+    }
+    .pop-up .pop-up__caption {
+        padding: 4% 9% 0
+    }
+    .pop-up .pop-up__paragraph {
+        padding: 1% 10% 1%
+    }
+    .pop-up .form .form__input_text {
+        padding: 15px;
+        margin-bottom: 0
+    }
+    .pop-up .form .form__input_label {
+        font-size: .9em
+    }
+}*/
+
+/*@media screen and (orientation:landscape) and (max-width:1023px) {
+    .buy .list-of-places {
+        margin-top: 60px
+    }
+    .pop-up {
+        height: 340px;
+        max-width: 700px
+    }
+    .pop-up .pop-up__caption {
+        font-size: 1.4em;
+        padding: 6% 12% 0
+    }
+    .pop-up .pop-up__paragraph {
+        padding: 2% 15% 1%;
+        font-size: 1em
+    }
+    .pop-up .form .form__button {
+        font-size: 1em
+    }
+    .pop-up .form .form__input_text {
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 1%
+    }
+    .pop-up .form .wrapper-check {
+        padding-top: 2%;
+        height: 40%
+    }
+}*/
+@media screen and (max-width:1360px) {
+    .reviews .reviews__wrapper{
+        padding-bottom: 140px;
+    }
+    .cream .dermatological-agent_registr{
+        margin-top: 20px;
+    }
+    .content p,
+    .green-button{
+        margin-left: 50px;
+    }
+    .content h2{
+        padding-left: 50px;
+    }
+    .rules{
+        padding-left: 80px;
+    }
+    .content h2:after{
+        left: 50px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    
+    .book-arrow-left:hover .hov {
+        display: none
+    }
+
+    .book-arrow-left:hover .unhov{
+    /*.book-arrow-left:active .hov {*/
+        display: block
+    }
+
+    .book-arrow-right:hover .hov {
+        display: none
+    }
+
+    .book-arrow-right:hover .unhov{
+    /*.book-arrow-right:active .hov {*/
+        display: block
+    }
+    .book-arrow-left:active .hov {
+        display: block
+    }
+
+    .book-arrow-left:active .unhov{
+    /*.book-arrow-left:active .hov {*/
+        display: none
+    }
+
+    .book-arrow-right:active .hov {
+        display: block
+    }
+
+    .book-arrow-right:active .unhov{
+    /*.book-arrow-right:active .hov {*/
+        display: none
+    }
+    .cream .manual {
+        /*margin-top: 30%*/
+        padding: 0;
+    }
+    .what .use__article>div:first-child{
+        padding-right: 0;
+    }
+    .what .use__article>div:last-child{
+        padding-left: 0;
+    }
+    .cream .manual__item {
+        /*height: 500px*/
+    }
+    .stories .stories__paragraph {
+        /*padding: 15% 0 10%*/
+        font-size: 16px;
+        line-height: 24px;
+    }
+/*    .reviews .list-of-reviews {
+        padding: 0 0 30%
+    }*/
+/*    .reviews .reviews__all-reviews {
+        bottom: 8%
+    }*/
+    .buy .list-of-places {
+        /*margin-top: 20%*/
+    }
+    .dermatological-agent .dermatological-agent__image {
+        top: 23%
+    }
+
+    .what.top .logo {
+        width: 96%;
+        margin-left: 3%
+    }
+    .what .list-of-pages {
+        width: 48%
+    }
+    .top__header {
+        padding: 20px 20px 0
+    }
+    .dermatological-agent.what {
+        margin: 0
+    }
+    .what .dermatological-agent .dermatological-agent__caption {
+        font-size: 26px;
+        margin-top: 6px;
+        line-height: 30px;
+        padding-bottom: 30px
+    }
+    .dermatological-agent .dermatological-agent__article {
+        padding: 0 7%
+    }
+    .what .dermatological-agent_registr {
+        margin-top: 0;
+        font-size: 12px;
+        line-height: 14px
+    }
+    .dermatological-agent .caption.dermatological-agent__caption:after {
+        top: 70%
+    }
+    .what .dermatological-agent h5 {
+        padding: 0 0 4px
+    }
+    .dermatological-agent.what {
+        padding-bottom: 16px
+    }
+    .use {
+        padding: 12% 7%
+    }
+    .use.what .use__caption,
+    .reviews .reviews__caption {
+        margin-bottom: 60px;
+        font-size: 27px
+    }
+    .capt_image {
+        width: 26px;
+        height: 26px;
+        min-width: 0;
+        margin: 0 2% 0 6%
+    }
+    .what .use__article_capt {
+        padding-bottom: 18px
+    }
+    .what .use__article_text {
+        font-family: 'Ubuntu Mono';
+        font-style: italic;
+        font-size: 18px;
+        line-height: 24px;
+        padding-top: 16px;
+        padding-right: 0;
+        padding-bottom: 2px
+    }
+    .what .use__article_text:last-child {
+        padding-bottom: 40px
+    }
+    .what .use__article>div:nth-child(2) {
+        /*padding-left: 0*/
+    }
+    .last_use__article_capt {
+        margin-bottom: 27px
+    }
+    .use .use__more {
+        font-size: 14px;
+        width: 100%;
+        max-width: 300px
+    }
+    .use__more_capt {
+        padding: 21px 6px
+    }
+    .reviews__link{
+        margin-left: 0;
+        display: block;
+    }
+    .what .disclaimer .disclaimer__img_min {
+        width: 100%;
+        margin-left: 0
+    }
+    .what .disclaimer p {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 16px;
+        padding: 0;
+    }
+    .use {
+        padding: 12% 7% 2%
+    }
+    .reviews.what {
+        /*padding: 0*/
+    }
+    .reviews.what .reviews__caption {
+        /*padding: 0;*/
+        /*padding-top: 30px;*/
+        margin-top: 0;
+        width: 70%;
+        font-size: 27px;
+        padding-left: 8%;
+        line-height: 30px;
+        margin-bottom: 40px
+    }
+    .section>.caption {
+        font-size: 27px;
+        line-height: 30px;
+        margin-bottom: 40px;
+        /*padding-top: 40px;*/
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .use__article_capt {
+        font-size: 24px
+    }
+    .reviews.what .list-of-reviews__item:nth-child(2n),
+    .reviews.what .list-of-reviews__item {
+        /*padding: 0 8%*/
+    }
+    .reviews.what .reviews__reviewer {
+        font-size: 20px;
+        float: left;
+        width: 100%;
+    }
+    .reviews__link{
+        float: left;
+    }
+    .reviews.what .list-of-reviews__item.list-of-reviews__item_fourth article {
+        padding: 0
+    }
+    .reviews.what .reviews__article,
+    .reviews.what .list-of-reviews__item.list-of-reviews__item_fourth article {
+        height: auto;
+        padding-bottom: 32px;
+        padding-top: 11px
+    }
+    .buy.what {
+        /*padding: 10% 0 5% 8%*/
+    }
+    .what .dermatological-agent .dermatological-agent__caption {
+        padding-bottom: 80px
+    }
+    .dermatological-agent .caption.dermatological-agent__caption:after {
+        top: 40%
+    }
+    .capt_image {
+        width: 20px;
+        height: 18px;
+        min-width: 0;
+        /*margin: 10px 2% 0 6%*/
+    }
+    .p.flip,
+    .p.fliped {
+        -webkit-transition: unset;
+        -o-transition: unset;
+        transition: unset
+    }
+
+    .what .dermatological-agent__image {
+        display: none
+    }
+    .use__article>div:first-child .use__article_text {
+        display: block
+    }
+    .capt_image {
+        display: inline-block;
+	    width: 40px;
+	    height: 30px;
+	    min-width: 0;
+	    /* margin: 10px 10px 0; */
+	    position: absolute;
+	    -webkit-transition: all 1s ease;
+	    -o-transition: all 1s ease;
+	    transition: all 1s ease;
+	    top: 15px;
+	    left: -30px;
+    }
+    .what .use__article_capt + .use__article_content{
+    	overflow: hidden;
+    	height: 0;
+	    -webkit-transition: all 1s ease;
+	    -o-transition: all 1s ease;
+	    transition: all 1s ease;
+    }
+
+    .opened .capt_image {
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+
+    .popup_input__wrap{
+        height: 100%;
+    }
+    .popup_input__wrap{
+        width: 62%;
+    }
+    .form__button{
+        margin-right: 16px;
+    }
+
+    .what .use__article_capt.opened + .use__article_content{
+    	overflow: auto;
+    	height: auto;
+    }
+    .what .mob {
+        display: block
+    }
+    .what .mob .dermatological-agent_registr {
+        margin: 0;
+        padding-left: 0
+    }
+    .what .use__article>div {
+        width: 100%
+    }
+    .use__article_text {
+        display: none
+    }
+    .what .use__article_capt {
+        border-bottom: 1px solid #000;
+        cursor: pointer;
+        position: relative;
+	    padding-left: 60px;
+	    box-sizing: border-box;
+    }
+    .use__article_text:last-child {
+        border-bottom: 1px solid #000
+    }
+
+    .book {
+        -webkit-perspective: none;
+        perspective: none;
+        background-image: none;
+        background-color: #fff;
+        height: 600px
+    }
+    .top__nav .bg-lines {
+        min-width: 101%
+    }
+    .mobile {
+        display: block
+    }
+    .mobile_pict {
+        position: relative
+    }
+    .mobile .top__nav {
+        display: block;
+        position: relative;
+        margin-top: 0;
+        padding: 20px 5px;
+        box-sizing: border-box
+    }
+    .border {
+        display: none
+    }
+    .content .book_contr {
+        display: none
+    }
+    .wrap {
+        -webkit-transform-style: unset;
+        transform-style: unset
+    }
+    .alphabet {
+        display: none
+    }
+    .p.flip {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        display: block
+    }
+    .p {
+        width: 100%;
+        display: none
+    }
+    .fliped .content img {
+        display: none
+    }
+    .content .l_a_b {
+        display: block;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+    .book_prev {
+        left: 45px
+    }
+    .p {
+        border-radius: 0
+    }
+/*    .list-of-pages__item {
+        width: 44%
+    }*/
+    .list-of-pages {
+        margin: 18px 0 0
+    }
+    .section.reviews.what:before{
+        display: none;
+    }
+    .mobile_pict {
+        height: 545px
+    }
+    .mobile_pict img {
+        height: 100%
+    }
+    .top__nav .step-list__step_second,
+    .top__nav .step-list__step_fourth {
+        margin-top: 15%
+    }
+    .top__nav .step-list {
+        height: 100%;
+        padding: 20px 30px;
+    }
+    .top__nav .bg-lines{
+        left: 3%;
+        top: 10%;
+        height: 80%;
+    }
+    .section.book {
+        margin-top: 0
+    }
+    .content h2 {
+        font-size: 26px;
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        margin-top: 0
+    }
+    .content p {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Ubuntu Mono';
+        font-style: italic;
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .book .content h2:after{
+        left: 0;
+    }
+    .green-button{
+        margin-left:0;
+    }
+    .section.book:after {
+        display: none
+    }
+    .book {
+        padding-bottom: 0
+    }
+    .wrap {
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 0
+    }
+    .section {
+        /*padding: 1px 0*/
+    }
+    .stories{
+        margin: -30px 0 -55px;
+    }
+    .page-template-main-page .section.reviews{
+        padding: 0;
+    }
+/*    .cream .manual {
+        margin-top: 0
+    }*/
+/*    .cream .manual__item {
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 0;
+        width: 35%
+    }*/
+/*    .anim_wr {
+        width: 180px
+    }*/
+    /*.stories {*/
+        /*padding: 12% 8%;*/
+/*        margin-top: -30px;
+        margin-bottom: -60px*/
+    /*}*/
+/*    .dermatological-agent {
+        padding-bottom: 300px
+    }*/
+    .cream .dermatological-agent_registr {
+        margin-left: 8%
+    }
+    .section.buy {
+        /*padding: 0 0 90px 8%*/
+    }
+    .section.cream {
+        padding: 20px 36px;
+        padding-bottom: 50px
+    }
+    .stories .stories__caption:after{
+        top: 45px;
+    }
+    .mobile_pict>img {
+        height: auto;
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%
+    }
+
+/*    .anim_wr {
+        position: relative;
+        height: 170px;
+        width: 200px
+    }*/
+
+    .manual img {
+        max-width: 144px
+    }
+    .blood_1{
+        top: 27%;
+        left: 40%;
+    }
+    .drop_red{
+        width: 45%;
+        left: 26%;
+    }
+    .fall_1{
+        bottom: 5%;
+        left: 37%;
+    }
+    #demo {
+        left: 29%;
+        top: 10%;
+    }
+
+    .arrow_down {
+        width: 34px;
+        top: 30px
+    }
+    .p.fliped {
+        display: none
+    }
+
+    .content {
+        float: left;
+        width: 100%;
+        text-align: left
+    }
+    .p {
+        height: auto;
+        position: relative
+    }
+    .wrap {
+        position: relative
+    }
+    .section.book, .book {
+        height: auto;
+        min-height: auto
+    }
+    .rules{
+        font-size: 18px;
+        /*display: block;*/
+        padding-left: 0;
+    }
+  /*  .section.book {
+        height: auto;
+        min-height: auto
+    }*/
+
+    .what .list-of-pages__item a span {
+        padding: 10px 40px 18px;
+        font-size: 18px;
+        line-height: 18px
+    }
+    .what .list-of-pages {
+        width: 100%
+    }
+    .top__header.what .list-of-pages {
+        margin: 0 auto
+    }
+    .what .list-of-pages__item a {
+        float: none;
+        margin: 10px 0;
+        display: inline-block;
+    }
+
+    .cream_caption {
+        /*width: 90%;*/
+        /*text-align: center;*/
+        padding: 15px 60px 40px;
+    }
+    .footer .share__definition img {
+        margin-top: 50%
+    }
+    img {
+        min-width: 100%;
+        width: 100%
+    }
+    html,
+    body {
+        font-size: 26px
+    }
+    .top {
+        height: auto;
+        min-height: 100%;
+        padding: 0
+    }
+    .top:after {
+        display: none
+    }
+    .top .logo {
+        width: 100%
+    }
+    .top .logo span {
+        display: block;
+        font-size: 30px;
+    }
+    .list-of-pages {
+        margin: 8% auto;
+        width: 100%;
+        max-width: 1000px
+    }
+    .list-of-pages__item a {
+        line-height: 1.2;
+        display: inline-block;
+    }
+    .top__nav:after {
+        content: '';
+        position: absolute;
+        height: 40px;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        -webkit-transform: translate(0, 30%);
+        -ms-transform: translate(0, 30%);
+        transform: translate(0, 30%);
+        background-image: url('../images/container-top.png');
+        background-repeat: repeat-x
+    }
+    .top__nav .step-list__step img {
+        width: 35%;
+        min-width: 10%
+    }
+    .top__nav .step-list__step figcaption {
+        width: 65%;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        /*padding-left: 3%;*/
+        font-size: 1.1em;
+        line-height: 1.2
+    }
+/*    .section.book {
+        overflow: visible;
+        margin-top: 0
+    }*/
+    .top__nav {
+        width: 100%;
+        padding-bottom: 5%;
+        display: none;
+        top: unset;
+        right: unset;
+        margin-top: 10%
+    }
+    .section.book{
+        padding: 60px 65px;
+    }
+    .section.book:after {
+        content: '';
+        position: absolute;
+        height: 30px;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        -webkit-transform: translate(0, 80%);
+        -ms-transform: translate(0, 80%);
+        transform: translate(0, 80%);
+        background-image: url('../images/bg-border-bottom.png');
+        background-repeat: repeat-x
+    }
+    .alphabet {
+        display: none
+    }
+    .pages.shadows>div:nth-child(1) {
+        display: none
+    }
+    .p,
+    .p.p2,
+    .p.p3,
+    .p.p4,
+    .p.p5,
+    .p.p6 {
+        position: relative;
+        width: 100%;
+        border: 0;
+        border-radius: 0
+    }
+    .p.p2:before,
+    .p.p4:before,
+    .p.p6:before {
+        content: '';
+        position: absolute;
+        height: 26px;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        -webkit-transform: translate(0, -30%);
+        -ms-transform: translate(0, -30%);
+        transform: translate(0, -30%);
+        background-image: url('../images/bg-border-bottom-orange.png');
+        background-repeat: repeat-x
+    }
+    .p.p2:after,
+    .p.p4:after,
+    .p.p6:after {
+        content: '';
+        position: absolute;
+        height: 26px;
+        z-index: 5;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        -webkit-transform: translate(0, 30%);
+        -ms-transform: translate(0, 30%);
+        transform: translate(0, 30%);
+        background-image: url('../images/bg-border-top.png');
+        background-repeat: repeat-x
+    }
+    .p .book-arrow-left img,
+    .p .book-arrow-right img {
+        width: 100%
+    }
+    .p.p3 .page-content {
+        padding: 13% 8%;
+        text-align: center
+    }
+    .p.p3 h2 {
+        text-align: left;
+        font-size: 3em
+    }
+    .p.p3 h2:after {
+        background-size: contain;
+        width: 230px;
+        height: 60px
+    }
+    .p.p3 p {
+        text-align: left;
+        margin: 18% 0 7%;
+        font-size: 1.3em
+    }
+    .p.p3 .green-button {
+        text-align: left;
+        padding: 3% 10% 7%;
+        width: 100%;
+        max-width: 600px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0 auto;
+        line-height: 1.2;
+        font-size: 2em;
+        border-radius: 15% 25% 25% 25%
+    }
+    .p.p3 .rules {
+   /*     margin: 7% 0 0 0;
+        font-size: 1.3em*/
+    }
+    .top.what {
+        padding: 0
+    }
+/*    .section>.caption {
+        text-align: left
+    }*/
+  /*  .cream>.caption {
+        text-align: center
+    }*/
+    .caption.buy__caption{
+        text-align: left;
+    }
+    .cream {
+        /*padding: 12% 8%*/
+    }
+
+    .cream:before{
+        display: none;
+    }
+    .cream .dermatological-agent_registr {
+        text-align: left;
+        margin-left: 0
+    }
+    .cream .cream__caption:after {
+        left: 0;
+        top: 130%;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        background-size: contain;
+        width: 230px;
+        height: 60px
+    }
+/*    .cream .manual {
+        margin-top: 25%
+    }*/
+ /*   .cream .manual__item {
+        height: 300px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        margin-bottom: 8%;
+        width: 49%
+    }*/
+    .cream .manual__item figcaption {
+/*        display: inline-block;
+        text-align: left;
+        padding: 0 13%;*/
+        line-height: 1.1;
+/*        -webkit-box-sizing: border-box;
+        box-sizing: border-box;*/
+        font-size: 16px
+    }
+
+    .disclaimer p{
+        padding: 0 20px 10px;
+    }
+
+    /*.stories {*/
+       /* padding: 12% 8%;
+        margin-top: -48px;
+        margin-bottom: -40px*/
+    /*}*/
+/*    .stories .stories__caption:after {
+        left: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        top: 120%;
+        background-size: contain;
+        width: 100px;
+        height: 60px
+    }*/
+  /*  .stories .stories__article {
+        margin-top: 4%
+    }*/
+/*    .stories .stories__paragraph {
+        width: 100%;
+        text-align: left;
+        line-height: 1.4;
+        padding: 15% 0
+    }*/
+    .stories__caption{
+        font-size: 27px;
+        line-height: 30px;
+    }
+    .stories .stories__iframe {
+        width: 100%;
+        max-width: 860px;
+        height: 480px;
+        margin: 2% auto
+    }
+    .reviews {
+        padding: 0;
+        min-height: auto
+    }
+/*    .reviews .reviews__all-reviews {
+        width: 20%
+    }*/
+    .reviews__all-reviews span {
+        padding: 0px 30px 25px;
+    }
+    .dermatological-agent_about {
+        width: 100%
+    }
+    .reviews:before {
+        background-image: url('../images/bg-border-top-grey.png')
+    }
+    .reviews .reviews__wrapper {
+        width: 100%;
+        position: relative;
+        /*height: 100%;*/
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 60px 65px;
+        padding-bottom: 80px;
+        background-color: #f4f3ef;
+        background-image: none;
+        border-radius: 0
+    }
+    .reviews .reviews__wrapper:before,
+    .reviews .reviews__wrapper:after {
+        display: none
+    }
+    .reviews .reviews__caption {
+        text-align: left
+    }
+    .reviews .reviews__caption:after {
+        left: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        top: 120%;
+        background-size: contain;
+        width: 100px;
+        height: 60px
+    }
+    .reviews .list-of-reviews {
+        /*margin: 0;*/
+        /*padding: 0 0 28%;*/
+        width: 100%;
+        padding: 0 0 110px;
+    }
+    .owl-item {
+        padding: 0;
+        height: 0
+    }
+    .owl-item.active {
+        height: 100%
+    }
+    .owl-nav {
+        top: unset;
+        bottom: 0;
+        left: 0;
+        height: auto;
+        overflow: hidden
+    }
+    .owl-prev {
+        float: left;
+        position: relative;
+        left: unset;
+        top: unset;
+        width: 90px;
+        height: 70px;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+    .owl-next {
+        width: 90px;
+        float: right;
+        height: 70px;
+        right: unset;
+        top: unset;
+        position: relative;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    .reviews__article {
+        text-align: left
+    }
+    .reviews .reviews__paragraph {
+        /*padding-bottom: 10%;*/
+        line-height: 1.4;
+        text-align: left;
+        font-size: 18px;
+    }
+    .reviews .reviews__reviewer {
+        font-weight: bold;
+        text-align: left;
+        font-size: 20px;
+    }
+    .reviews .reviews__all-reviews {
+        left: 50%;
+       /* font-size: 1.4em;*/
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        bottom: 10%;
+        /*padding: 17px 40px 17px 32px*/
+    }
+/*    .buy {
+        padding: 12% 8%
+    }*/
+    .buy .buy__caption:after {
+        left: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        background-size: contain;
+        width: 230px;
+        height: 60px
+    }
+    .buy .list-of-places {
+        margin-top: 50px;
+        text-align: left
+    }
+    .buy .list-of-places__item {
+        margin: 80px 0;
+        text-align: left;
+        max-width: 400px;
+        width: 100%;
+        display: block;
+        padding: 0
+    }
+    .buy .list-of-places__item a {
+        display: inline-block;
+        width: 60%
+    }
+    .buy .list-of-places__item img {
+        width: 100%
+    }
+    .dermatological-agent {
+        /*padding: 12% 8% 30%*/
+        text-align: left;
+    }
+    .more_info {
+        text-align: left;
+        padding-left: 40px;
+        display: inline-block;
+        font-weight: bold;
+        position: relative;
+        top: -45px;
+    }
+    .more_info a{
+        text-decoration: underline;
+    }
+    .dermatological-agent_registr{
+        margin-left: 0;
+    }
+    .section.dermatological-agent .dermatological-agent_list{
+        padding: 0;
+    }
+    .dermatological-agent .dermatological-agent__image {
+        width: 100%;
+        padding: 0;
+    }
+    .dermatological-agent .dermatological-agent__article {
+        width: 100%;
+        padding: 0
+    }
+    .dermatological-agent .dermatological-agent__caption {
+        width: 100%
+    }
+    .dermatological-agent .dermatological-agent__caption:after {
+        background-size: contain;
+        width: 230px;
+        height: 60px
+    }
+    .dermatological-agent .dermatological-agent__paragraph {
+        padding-top: 0
+    }
+    .dermatological-agent .dermatological-agent__paragraph.dermatological-agent__paragraph_first {
+        padding-top: 50%
+    }
+    footer {
+        margin: 200px 0 0;
+    }
+    .footer .disclaimer{
+        padding: 0 65px;
+        box-sizing: border-box;
+    }
+    .footer .disclaimer .disclaimer__img {
+        /*min-width: 90%*/
+    }
+    .footer .share {
+        float: none;
+        width: 100%;
+        padding: 10% 0 0;
+        overflow: hidden
+    }
+    .footer .share__term {
+        width: 36%
+    }
+    .footer .share__definition {
+        width: 16%;
+        padding: 0
+    }
+    .footer .share__definition a {
+        display: block;
+        width: 60%
+    }
+    .pop-up {
+        /*width: 85%;*/
+        max-width: 600px;
+        /*height: 460px*/
+    }
+    .dicl_bot{
+        margin-top: 0;
+    }
+    .pop-up .pop-up__caption {
+        padding: 5% 5% 0;
+        font-weight: normal;
+        line-height: 1.2;
+        font-size: 1em;
+    }
+    .pop-up .pop-up__paragraph {
+        padding: 3% 7% 0;
+        font-size: 1em;
+    }
+    .pop-up .form {
+        /*height: 30%*/
+    }
+    .pop-up .form .form {
+        width: 50%;
+        padding: 20px 15px;
+        font-size: 1em
+    }
+    .pop-up .form .form__button {
+        font-size: 1em
+    }
+    .pop-up .form .form__input_text {
+        height: 90%;
+        font-size: 1em;
+        padding: 20px 15px;
+    }
+    .pop-up .form .form__input_checkbox {
+        width: 25px;
+        height: 25px;
+        -webkit-transform: translate(0, 30%);
+        -ms-transform: translate(0, 30%);
+        transform: translate(0, 30%)
+    }
+    .pop-up .form .wrapper-check:before {
+        width: 20px;
+        height: 20px;
+ /*       -webkit-transform: none;
+        -ms-transform: none;
+        transform: none*/
+    }
+    .pop-up .form .wrapper-check:after {
+        left: 0px;
+        /*bottom: 10px;*/
+        width: 25px;
+        height: 27px
+    }
+/*    .pop-up .form .wrapper-check {
+        height: 45%
+    }*/
+    ..pop-up .form .wrapper-check {
+        font-size: 1em
+    }
+    .pop-up .pop-up-list {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .pop-up .pop-up-list__item a {
+        width: 50%
+    }
+    .top.what:after,
+    .reviews.what:before,
+    .reviews.what:after {
+        display: block;
+        height: 28px;
+        background-size: contain
+    }
+    .dermatological-agent.what {
+        padding: 0 8% 13%
+    }
+    .dermatological-agent.what .dermatological-agent__image {
+        padding: 0;
+        position: initial
+    }
+    .dermatological-agent.what .dermatological-agent__caption {
+        font-size: 40px;
+	    /* margin-bottom: 20%; */
+	    line-height: 60px;
+	    margin: 0 0 60px;
+	    padding: 20px 0 0;
+    }
+    .dermatological-agent.what .dermatological-agent__caption:after,
+    .use .use__caption:after,
+    .reviews.what .reviews__caption:after,
+    .buy .buy__caption:after {
+        top: 120%;
+        width: 100px;
+        height: 40px;
+        background-size: contain
+    }
+    .dermatological-agent.what .dermatological-agent__paragraph {
+        font-size: 1.8em;
+        padding-top: 0;
+        line-height: 1.5
+    }
+    .dermatological-agent.what .dermatological-agent__paragraph.dermatological-agent__paragraph_first {
+        padding-top: 7%
+    }
+    .use {
+        padding: 10% 8% 13%;
+        text-align: left
+    }
+    .use.what .use__caption,
+    .reviews .reviews__caption {
+        /*margin-bottom: 20%*/
+        margin-left: 0;
+    }
+    .use .use__article {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-top: 0
+    }
+    .use .use__paragraph_left {
+        width: 100%;
+        padding: 0
+    }
+    .use .use__paragraph_right {
+        width: 100%;
+        padding: 10% 0
+    }
+    .reviews.what {
+        padding: 60px 0 0;
+        min-height: auto;
+        background: 0;
+        background-color: #ffcb2a
+    }
+    .reviews.what .reviews__caption {
+        padding: 0 8%;
+        margin-left: 0;
+    }
+    .reviews.what .reviews__caption:after {
+        left: 10%
+    }
+    .reviews.what .list-of-reviews {
+        padding: 0
+    }
+    .reviews.what .list-of-reviews__item {
+        width: 100%;
+        padding: 8%;
+        margin: 0
+    }
+    .reviews.what .list-of-reviews__item:first-child {
+        padding-top: 4%;
+    }
+    .reviews.what .list-of-reviews__item:nth-child(2),
+    .reviews.what .list-of-reviews__item:nth-child(4) {
+        background-color: #ffda68
+    }
+    .reviews.what .list-of-reviews__item:nth-child(4) {
+        padding-bottom: 13%
+    }
+    .reviews.what .reviews__article {
+        text-align: left;
+        background: 0;
+        padding: 0;
+        height: auto
+    }
+    .reviews.what .reviews__article:before,
+    .reviews.what .reviews__article:after {
+        display: none
+    }
+    .reviews.what .reviews__paragraph {
+        padding-bottom: 5%;
+        line-height: 1.5
+    }
+    .buy.what {
+        /*padding: 10% 8% 70%*/
+    }
+    .arrow_down{
+        display: none;
+    }
+    .section.book .arrow_down{
+        display: block;
+    }
+}
+
+
+/*@media screen and (min-width:1200px) and (max-width:1365px) {
+    .list-of-pages__item a {
+        font-size: 1.4em
+    }
+    .top__nav .step-list__step figcaption {
+        font-size: 1.2em
+    }
+    .dermatological-agent .dermatological-agent__caption,
+    .section>.caption,
+    .reviews .reviews__caption {
+        font-size: 3.2em
+    }
+    .reviews.what .reviews__article {
+        height: 410px
+    }
+    .reviews .reviews__paragraph {
+        line-height: 1
+    }
+}*/
+
+/*@media screen and (max-width:1365px) {
+    .content h2 {
+        margin-top: 24px;
+        padding-bottom: 48px;
+        padding-left: 60px
+    }
+    .content h2:after {
+        left: 18px;
+    }
+    .content p {
+        margin-left: 60px;
+        line-height: 22px
+    }*/
+/*    .green-button {
+        margin-left: 60px
+    }*/
+/*    .rules {
+        padding-left: 90px
+    }*/
+/*}*/
+/*
+@media screen and (max-width:1366px) {
+    .border_left,
+    .border_right {
+        display: none
+    }
+}
+
+@media screen and (min-width:1920px) {
+    html,
+    body {
+        font-size: 14.3px
+    }
+    .top__nav .step-list__step figcaption {
+        padding: 7px 0 0 5%
+    }
+    .use .use__paragraph_right {
+        padding: 0 2% 0 4%
+    }
+}*/
+
+
+@media screen and (max-width:1024px) {
+	.popup_input__wrap{
+		width: 60%;
+	}
+	.pop-up .form .wrapper-check{
+		    font-size: 23px;
+    line-height: 23px;
+	}
+}
+
+
+@media screen and (max-width:818px) {
+    #demo{
+        top: 14%;
+    }
+    .blood_1{
+        top: 27%;
+        left: 49%;
+    }
+    .fall_1 {
+        left: 46%;
+    }
+    .def_6{
+        top: 7%;
+    }
+    .pop-up{
+        /*height: 360px;*/
+        padding: 15px 20px 35px;
+        max-width: 530px;
+    }
+    .pop-ups{
+        font-size: 18px;
+    }
+    .popup_input__wrap {
+        width: 58%;
+    }
+
+    .pop-up .form .form__input_text{
+    	padding: 15px;
+    }
+
+    .pop-up .form .wrapper-check{
+    	font-size: 16px;
+    	line-height: 16px;
+    }
+    .pop-up .form .form__input_text{
+    	font-size: 15px;
+    }
+    .pop-up .form .form__button{
+    	font-size: 15px;
+    	line-height: 15px;
+    	padding: 5% 17px 5%;
+    }
+    .pop-up .form .wrapper-check:before{
+    	width: 15px;
+    	height: 15px;
+    }
+    .pop-up .form .wrapper-check:after{
+    	width: 15px;
+    	height: 17px;
+    }
+
+}
+/*@media screen and (max-width : 1199px) 
+and (orientation : landscape) {
+   .pop-up{
+        height: 480px;
+    } 
+}
+
+@media screen and (max-width : 918px) 
+and (orientation : landscape) {
+   .pop-up{
+        height: 360px;
+    } 
+}
+@media screen and (max-width : 608px) 
+and (orientation : landscape) {
+   .pop-up{
+        height: 260px;
+    } 
+}*/
+
+
+
+
+@media screen and (max-width:480px) {
+
+    /*html,
+    body {
+        font-size: 9px
+    }
+    .cream .manual__item {
+        height: 170px
+    }
+    .cream .manual__item img {
+        height: 90px
+    }
+    .cream .manual__item figcaption {
+        font-size: 1.5em
+    }
+    .owl-prev,
+    .owl-next {
+        width: 60px;
+        height: 45px
+    }
+    .pop-up {
+        height: 185px;
+        min-width: 290px
+    }
+    .pop-up .form .form__input_text {
+        border-radius: 7px
+    }
+    .pop-up .form .form__button {
+        padding-bottom: 7%
+    }
+    .green-button span {
+        padding: 7px 30px
+    }
+
+    .footer .disclaimer .disclaimer__img_min {
+        display: block;
+        width: 80%;
+        min-width: 50%;
+        margin-left: 10%
+    }
+    .dermatological-agent {
+        /*padding-bottom: 110%*/
+    /*}
+    .dicl_bot {
+        background-image: url(../images/disclaimer_white_min.svg)
+    }*/
+    .top .logo span{
+        font-size: 13px;
+    }
+    .list-of-pages__item span{
+        padding: 6px 12px 12px;
+        font-size: 17px;
+        line-height: 17px;
+    }
+    .book_contr_ar{
+        bottom: 0;
+        width:40px;
+        height:40px;
+    }
+    .mobile_pict{
+        height: 300px;
+    }
+    .top__nav .step-list__step figcaption{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .list-of-pages__item span{
+        padding: 10px 20px 22px;
+    }
+    .section,
+    .section.book,
+    .reviews .reviews__wrapper{
+        padding: 60px 25px;
+    }
+    .section.book{
+        padding-bottom: 0;
+    }
+    .section.cream{
+        padding-top: 0;
+    }
+    .section>.caption,
+    .dermatological-agent_list h6{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .cream h1.cream_caption{
+        padding: 10px 0 40px;
+        margin-bottom: 10px;
+    }
+    .reviews .reviews__caption{
+        margin: 0 0 40px;
+    }
+    .dermatological-agent_registr{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .cream .manual__item{
+        width:50%;
+    }
+    .rules{
+        font-size: 14px;
+    }
+    .content p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .content h2{
+        padding-bottom: 45px;
+    }
+    .content h2:after,
+    .cream_caption:after,
+    .dermatological-agent_registr:after{
+        width: 70px;
+    }
+    .stories .stories__caption:after{
+        top: 90%;
+        width: 70px;
+        left:0;
+        transform: none;
+    }
+    .manual img{
+        max-width: 95px;
+    }
+    .anim_wr{
+        min-height: 105px;
+    }
+    .blood_1{
+        top: 37%;
+        width: 28px;
+    }
+    .drop_red{
+        top:20%;
+    }
+    .manual__item_fourth .anim_wr .blood_4{
+        top:53%;
+    }
+    #demo{
+        top:40%;
+    }
+    .def_6{
+        top: 20%;
+    }
+    .blood_4.blood_3{
+        top:38%;
+    }
+    .an .bl_b_5{
+        top:50%;
+    }
+    .an .p_b_5{
+        top:25%;
+    }
+    .an .gr_b_5{
+        top:55%;
+    }
+    .fall_1{
+        bottom: 0;
+    }
+    .top__nav .step-list__step_second, .top__nav .step-list__step_fourth{
+        margin-top: 24%;
+    }
+    .top__nav .step-list{
+        padding: 10px;
+    }
+    .green-button span{
+        padding: 14px 30px;
+        font-size: 17px;
+        line-height: 16px;
+        text-align: center;
+    }
+    .rules-wrapper{
+        text-align: center;
+    }
+    .stories .stories__iframe{
+        height: 200px;
+    }
+    .dicl_bot {
+        background-image: url(../images/disclaimer_white_min.svg)
+    }
+    .cream .manual__item figcaption{
+        font-size: 12px;
+    }
+    .footer .disclaimer{
+        padding: 0 25px;
+    }
+    .dermatological-agent_list ul{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .more_info{
+        font-size: 20px;
+        line-height: 24px;
+        top: -23px;
+        padding-left: 0;
+    }
+    .disclaimer .disclaimer__img {
+        display: none;
+    }
+    .cream .disclaimer .disclaimer__img_min, .what .disclaimer .disclaimer__img_min {
+        display: block;
+    }
+    .disclaimer .disclaimer__img {
+        display: none;
+    }
+    .footer .disclaimer .disclaimer__img_min {
+        display: block;
+/*        width: 72%;
+        min-width: 50%;
+        margin-left: 13%;*/
+    }
+    .footer {
+        padding: 20px 25px 20px;
+    }
+    .footer .copyright {
+       font-size: 14px;
+    }
+    .footer .share__term {
+        font-size: 14px;
+    }
+    .footer .share__definition img{
+        height: 40px;
+        margin-top: 90%;
+    }
+    .stories__caption {
+        font-size: 26px;
+        text-align: left;
+    }
+    .stories .stories__paragraph{
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+        padding: 25px 0;
+    }
+    .disclaimer p{
+        padding: 10px 0 10px;
+        font-size: 12px;
+    }
+    .reviews .reviews__caption:after,
+    .buy .buy__caption:after{
+        width: 70px;
+    }
+    .reviews .reviews__paragraph{
+        line-height: 24px;
+        text-align: left;
+        font-size: 16px;
+    }
+    .reviews__caption{
+        margin: 0 0 40px;
+        padding: 0 20px 0 0;
+    }
+    .owl-prev,
+    .owl-next{
+        width: 50px;
+        height: 40px;
+    }
+    .reviews .reviews__all-reviews{
+        bottom: 8%;
+        line-height: 16px;
+    }
+
+    .reviews__all-reviews span{
+        padding: 17px 25px 25px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .caption.buy__caption{
+        padding: 0 0 10px;
+    }
+    .section.buy{
+        padding: 30px 25px;
+    }
+    .buy .list-of-places{
+        margin-top: 0;
+    }
+    .buy .list-of-places__item{
+        margin: 35px 0; 
+    }
+    .buy .list-of-places__item:last-child{
+        margin-bottom: 0;
+    }
+    footer{
+        margin: 390px 0 0;
+    }
+    
+    .pop-up .pop-up__caption{
+        font-size: 11px;
+        /*padding: 22px 30px 5px;*/
+    }
+    .pop-up .pop-up__paragraph{
+        padding: 10px 10px 5px;
+        /* width: 100%; */
+        font-size: 11px;
+        box-sizing: border-box;
+    }
+    .pop-up .form{
+        font-size: 10px;
+        line-height: 10px;
+        height: 12%;
+        padding: 10px;
+    }
+    .pop-up .pop-up__cross{
+        right: 0;
+    }
+    .pop-up .form .form__button{
+        font-size: 10px;
+        line-height: 10px;
+        padding: 10px 12px;
+        height: auto;
+        margin: 0;
+    }
+ /*   .popup_input__wrap{
+        height: 26px;
+    }*/
+    .pop-up .form .form__input_text{
+        padding: 10px;
+    	font-size: 10px;
+    }
+    .pop-up .form .wrapper-check{
+        padding-left: 20px;
+    	padding-top: 7px;
+    	padding-bottom: 7px;
+    	margin-left: 5px;
+    	font-size: 11px;
+    	line-height: 11px;
+    }
+    .pop-up .form .wrapper-check:before{
+        width: 11px;
+        height: 11px;
+        /*top: 6px;*/
+    }
+ /*   .pop-up{
+        height: 170px;
+    }*/
+    .pop-up .form .form__input_checkbox{
+        width: 10px;
+        height: 10px;
+    }
+    .pop-up .pop-up-list{
+        margin-top: 20px;
+    }
+/*    .pop-up .pop-up-list__item a{
+        width: 50px;
+    }*/
+    .pop-up-list__item img{
+        height: 25px;
+    }
+    .pop-up .form .wrapper-check.opacity:after{
+        width: 10px;
+        height: 12px;
+        bottom: 3px;
+        left: 1px;
+    }
+    .reviews.what{
+        padding:40px 0 0;
+    }
+    .reviews.what .reviews__caption:after{
+        width: 70px;
+    }
+    .dermatological-agent.what .dermatological-agent__caption{
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 45px;
+    }
+    .dermatological-agent.what .dermatological-agent__caption:after, .use .use__caption:after, .reviews.what .reviews__caption:after, .buy .buy__caption:after{
+        width: 70px;
+        top: 120%;
+    }
+    .consist p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .what.use{
+        padding: 40px 25px;
+    }
+    .what .list-of-pages__item a{
+        margin: 20px 0 0;
+    }
+    .use.what .use__caption{
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+    .what .use__article_capt{
+        padding-left: 35px;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    .capt_image{
+        width: 25px;
+        height: 20px;
+        left: -12px;
+    }
+    .what .use__article_capt.opened + .use__article_content{
+        padding: 10px 0;
+        border-bottom: solid 1px;
+    }
+    .what .use__article_capt.opened + .use__article_content > *{
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .use__more_capt{
+        padding: 20px 6px 20px;
+    }
+}
+/*///////////////////////////*/
+/*popup*/
+/*////////////////////////*/
+
+/*@media screen and (max-width: 1000px) and (orientation: landscape) {
+	.pop-up{
+		width: 80%;
+		height: 90%;	
+	}
+}*/
+@media screen and (max-width: 800px) and (orientation: landscape) {
+/*	.pop-up{
+		height: 80%;	
+	}*/
+	/*.pop-up__caption{
+		width: 100%;*/
+		/*height: 15%;*/
+/*		padding: 5% 10%;
+		box-sizing: border-box;
+	}*/
+	/*.pop-up__paragraph{
+		width: 100%;
+		padding: 5% 5% 0;
+		box-sizing: border-box;
+	}
+	.pop-up .form{
+		width: 100%;
+		padding: 5% 5% 0;
+		box-sizing: border-box;
+	}
+	.popup_input__wrap{
+		width: 60%;*/
+		/*height: 60%;*/
+	/*}*/
+	/*.pop-up .form .wrapper-check{
+		width: 70%;
+		/*height: 70%;*/
+	/*}*/
+}
+
+/*slider*/
+
+.active_slide{
+    /*transform: translate(-150%, -50%);*/
+    /*display: block;*/
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.mobile_pict>.non_active_slide_left{
+    /*display: none;*/
+    -webkit-transform: translate(-150%, -50%);
+    -ms-transform: translate(-150%, -50%);
+    -o-transform: translate(-150%, -50%);
+    transform: translate(-150%, -50%);
+}
+.mobile_pict>.non_active_slide_right{
+    /*display: none;*/
+    -webkit-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+}
+.mobile .mobile_pict>img{
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s ease;
+}
